@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd">
+
+<web-app xmlns="http://java.sun.com/xml/ns/javaee" version="2.5">
+    <servlet>
+        <servlet-name>newevent</servlet-name>
+        <servlet-class>org.androino.prototype.server.NewEventServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>newevent</servlet-name>
+        <url-pattern>/new_event</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>checkevents</servlet-name>
+        <servlet-class>org.androino.prototype.server.CheckNewEventsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>checkevents</servlet-name>
+        <url-pattern>/check_events</url-pattern>
+    </servlet-mapping>
+
+
+    <welcome-file-list>
+        <welcome-file>messagequeue.jsp</welcome-file>
+    </welcome-file-list>
+</web-app>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+<TextView  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="Androino Terminal APP r119"
+    />
+<TableLayout android:id="@+id/TableLayout01" android:layout_width="wrap_content" android:layout_height="wrap_content">
+	<TableRow android:id="@+id/TableRow01" android:layout_width="wrap_content" android:layout_height="wrap_content">
+		<Button android:text="START/STOP" android:id="@+id/Button" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+		<RadioButton android:text="" android:enabled="false" android:id="@+id/RadioButton01" android:layout_width="wrap_content" android:layout_height="wrap_content"></RadioButton>
+	</TableRow>
+</TableLayout>
+<TextView android:text="Enter number [0-31]" android:id="@+id/TextView02" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+<TableLayout android:id="@+id/TableLayout01" android:layout_width="wrap_content" android:layout_height="wrap_content">
+	<TableRow android:id="@+id/TableRow01" android:layout_width="wrap_content" android:layout_height="wrap_content">
+		<EditText android:text="" android:width="15mm" android:id="@+id/NumberText" android:layout_width="wrap_content" android:layout_height="wrap_content"></EditText>
+		<Button android:text="Send2Arduino" android:id="@+id/SendButton" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+	</TableRow>
+</TableLayout>
+
+<TextView android:text="Received:" android:id="@+id/TextView02" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+<TextView android:text="" android:id="@+id/DebugText" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+
+</LinearLayout>
